@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AI Tutor</title>
+  <link rel="stylesheet" href="pubilc/index.css">
+  <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.155.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <div id="heading">
+    <h1>THE AI TUTOR</h1>
+    <div class="border"></div>
+  </div>
+
+  <div id="query-box">
+    <input type="text" id="userQuery" placeholder="Ask me something..." />
+    <button id="submitQuery" type="button">Send</button>
+  </div>
+
+<!-- Add a container for the response -->
+  <!-- RESPONSE BOX -->
+<div id="response-box">
+  <div id="responseText"></div>
+</div>
+
+  <!-- ✅ Script moved to bottom -->
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

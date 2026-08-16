@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="profile-body">
+  <div class="profile-container">
+    <div class="welcome-logout"><h1>Welcome, <span id="profile-username"></span>!</h1>
+    <button class="mainpage-btn"><a href="mainpage.html">Ask Query</a></button>
+    <button class="logout-button"  onclick="handleLogout()">Logout</button>
+    </div>
+    <script src="auth.js"></script>
+    <script> loadProfile(); </script>
+    <div class="profile-section">
+      <div class="profile-card">
+        <div class="avatar"></div>
+        <h2>Student Name</h2>
+        <p class="email">student@example.com</p>
+        <button class="edit-btn" id="edit-profile">Edit Profile</button>
+      </div>
+
+      <div class="progress-card">
+        <h2>My Learning Progress</h2>
+        <div class="progress-item">Mathematics <span>75%</span><div class="bar"><div style="width: 75%"></div></div></div>
+        <div class="progress-item">Physics <span>45%</span><div class="bar"><div style="width: 45%"></div></div></div>
+        <div class="progress-item">Computer Science <span>90%</span><div class="bar"><div style="width: 90%"></div></div></div>
+        <div class="progress-item">History <span>30%</span><div class="bar"><div style="width: 30%"></div></div></div>
+        <div class="progress-item">Literature <span>60%</span><div class="bar"><div style="width: 60%"></div></div></div>
+      </div>
+    </div>
+
+    <div class="progress-section">
+      <div class="stats-card">
+        <h2>Learning Stats</h2>
+        <ul>
+          <li><span>📖 Study Time</span><strong>12.5 hours</strong></li>
+          <li><span>📅 Days Active</span><strong>7 days</strong></li>
+          <li><span>📚 Topics Explored</span><strong>5 topics</strong></li>
+        </ul>
+      </div>
+    
+      <div class="sessions-card">
+        <h2>Recent Learning Sessions</h2>
+        <div class="session">
+          <div class="icon">📘</div>
+          <div class="info">
+            <p><strong>Topic 1: Advanced Concepts</strong></p>
+            <p>2 hours ago</p>
+          </div>
+          <button class="resume-btn">Resume</button>
+        </div>
+        <div class="session">
+          <div class="icon">📘</div>
+          <div class="info">
+            <p><strong>Topic 2: Advanced Concepts</strong></p>
+            <p>4 hours ago</p>
+          </div>
+          <button class="resume-btn">Resume</button>
+        </div>
+        <div class="session">
+          <div class="icon">📘</div>
+          <div class="info">
+            <p><strong>Topic 3: Advanced Concepts</strong></p>
+            <p>6 hours ago</p>
+          </div>
+          <button class="resume-btn">Resume</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
