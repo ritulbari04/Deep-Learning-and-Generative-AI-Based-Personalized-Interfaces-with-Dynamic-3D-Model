@@ -16,7 +16,7 @@ async def get_voice(text):
 # Weaviate + Gemini setup
 client = weaviate.connect_to_local()
 questions = client.collections.get("School")
-genai.configure(api_key="AIzaSyC3pCAiP_jYxMrYO8C6alZzCYTrP11EE8A")
+genai.configure(api_key="YOUR_GOOGLE_API_KEY")
 history = dict()
 
 # Flask setup
