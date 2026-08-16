@@ -5,7 +5,7 @@ def taking_input():
     text=input()
     return text
 
-genai.configure(api_key="AIzaSyC3pCAiP_jYxMrYO8C6alZzCYTrP11EE8A")
+GOOGLE_API_KEY = "YOUR_GOOGLE_API_KEY"
 model = genai.GenerativeModel("gemini-1.5-flash")
 response = model.generate_content(taking_input())
 mytext=response.text
